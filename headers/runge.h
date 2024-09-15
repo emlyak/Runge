@@ -7,9 +7,6 @@
 class Runge {
 
 public:
-    // Runge() = 0;
-
-    // ~Runge() = default;
 
     static std::pair<std::vector<double>, std::vector<double>> solve(
         std::function<double(double, double)> func,
