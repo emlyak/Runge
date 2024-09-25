@@ -3,10 +3,14 @@
 
 #include <vector>
 #include <functional>
+#include "dllexport.h"
 
+DLL_RUNGE_EXPORT
 class Runge {
 
 public:
+
+    Runge() = delete;
 
     static std::pair<std::vector<double>, std::vector<double>> solve(
         std::function<double(double, double)> func,
